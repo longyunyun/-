@@ -1,0 +1,9 @@
+D:\工程\ClockPaint\ClockPaint\bin\Debug\ClockPaint.exe.config
+D:\工程\ClockPaint\ClockPaint\bin\Debug\ClockPaint.exe
+D:\工程\ClockPaint\ClockPaint\bin\Debug\ClockPaint.pdb
+D:\工程\ClockPaint\ClockPaint\obj\Debug\ClockPaint.frmMain.resources
+D:\工程\ClockPaint\ClockPaint\obj\Debug\ClockPaint.Properties.Resources.resources
+D:\工程\ClockPaint\ClockPaint\obj\Debug\ClockPaint.csproj.GenerateResource.Cache
+D:\工程\ClockPaint\ClockPaint\obj\Debug\ClockPaint.csproj.CoreCompileInputs.cache
+D:\工程\ClockPaint\ClockPaint\obj\Debug\ClockPaint.exe
+D:\工程\ClockPaint\ClockPaint\obj\Debug\ClockPaint.pdb

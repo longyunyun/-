@@ -1,0 +1,10 @@
+D:\工程\MyGDI\MyGDI\bin\Debug\MyGDI.exe.config
+D:\工程\MyGDI\MyGDI\bin\Debug\MyGDI.exe
+D:\工程\MyGDI\MyGDI\bin\Debug\MyGDI.pdb
+D:\工程\MyGDI\MyGDI\obj\Debug\MyGDI.csprojResolveAssemblyReference.cache
+D:\工程\MyGDI\MyGDI\obj\Debug\MyGDI.frmMain.resources
+D:\工程\MyGDI\MyGDI\obj\Debug\MyGDI.Properties.Resources.resources
+D:\工程\MyGDI\MyGDI\obj\Debug\MyGDI.csproj.GenerateResource.Cache
+D:\工程\MyGDI\MyGDI\obj\Debug\MyGDI.csproj.CoreCompileInputs.cache
+D:\工程\MyGDI\MyGDI\obj\Debug\MyGDI.exe
+D:\工程\MyGDI\MyGDI\obj\Debug\MyGDI.pdb

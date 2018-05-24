@@ -1,0 +1,7 @@
+D:\工程\HomeWork3\HomeWork3\obj\Debug\HomeWork3.csprojResolveAssemblyReference.cache
+D:\工程\HomeWork3\HomeWork3\obj\Debug\HomeWork3.csproj.CoreCompileInputs.cache
+D:\工程\HomeWork3\HomeWork3\bin\Debug\HomeWork3.exe.config
+D:\工程\HomeWork3\HomeWork3\bin\Debug\HomeWork3.exe
+D:\工程\HomeWork3\HomeWork3\bin\Debug\HomeWork3.pdb
+D:\工程\HomeWork3\HomeWork3\obj\Debug\HomeWork3.exe
+D:\工程\HomeWork3\HomeWork3\obj\Debug\HomeWork3.pdb

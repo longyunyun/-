@@ -1,0 +1,7 @@
+D:\工程\CharacterFrequency\CharacterFrequency\bin\Debug\CharacterFrequency.exe.config
+D:\工程\CharacterFrequency\CharacterFrequency\bin\Debug\CharacterFrequency.exe
+D:\工程\CharacterFrequency\CharacterFrequency\bin\Debug\CharacterFrequency.pdb
+D:\工程\CharacterFrequency\CharacterFrequency\obj\Debug\CharacterFrequency.csproj.CoreCompileInputs.cache
+D:\工程\CharacterFrequency\CharacterFrequency\obj\Debug\CharacterFrequency.exe
+D:\工程\CharacterFrequency\CharacterFrequency\obj\Debug\CharacterFrequency.pdb
+D:\工程\CharacterFrequency\CharacterFrequency\obj\Debug\CharacterFrequency.csprojResolveAssemblyReference.cache

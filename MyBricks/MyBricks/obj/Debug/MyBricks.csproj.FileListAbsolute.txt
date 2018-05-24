@@ -1,0 +1,10 @@
+D:\工程\MyBricks\MyBricks\bin\Debug\MyBricks.exe.config
+D:\工程\MyBricks\MyBricks\bin\Debug\MyBricks.exe
+D:\工程\MyBricks\MyBricks\bin\Debug\MyBricks.pdb
+D:\工程\MyBricks\MyBricks\obj\Debug\MyBricks.frmMain.resources
+D:\工程\MyBricks\MyBricks\obj\Debug\MyBricks.Properties.Resources.resources
+D:\工程\MyBricks\MyBricks\obj\Debug\MyBricks.csproj.GenerateResource.Cache
+D:\工程\MyBricks\MyBricks\obj\Debug\MyBricks.csproj.CoreCompileInputs.cache
+D:\工程\MyBricks\MyBricks\obj\Debug\MyBricks.exe
+D:\工程\MyBricks\MyBricks\obj\Debug\MyBricks.pdb
+D:\工程\MyBricks\MyBricks\obj\Debug\MyBricks.csprojResolveAssemblyReference.cache

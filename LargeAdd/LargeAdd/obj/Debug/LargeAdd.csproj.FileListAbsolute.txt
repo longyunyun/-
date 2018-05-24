@@ -1,0 +1,7 @@
+D:\工程\LargeAdd\LargeAdd\bin\Debug\LargeAdd.exe.config
+D:\工程\LargeAdd\LargeAdd\bin\Debug\LargeAdd.exe
+D:\工程\LargeAdd\LargeAdd\bin\Debug\LargeAdd.pdb
+D:\工程\LargeAdd\LargeAdd\obj\Debug\LargeAdd.csprojResolveAssemblyReference.cache
+D:\工程\LargeAdd\LargeAdd\obj\Debug\LargeAdd.csproj.CoreCompileInputs.cache
+D:\工程\LargeAdd\LargeAdd\obj\Debug\LargeAdd.exe
+D:\工程\LargeAdd\LargeAdd\obj\Debug\LargeAdd.pdb

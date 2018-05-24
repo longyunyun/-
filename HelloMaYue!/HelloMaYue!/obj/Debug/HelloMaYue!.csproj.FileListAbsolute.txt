@@ -1,0 +1,9 @@
+D:\工程\HelloMaYue!\HelloMaYue!\bin\HelloMaYue!.dll.config
+D:\工程\HelloMaYue!\HelloMaYue!\bin\HelloMaYue!.dll
+D:\工程\HelloMaYue!\HelloMaYue!\bin\HelloMaYue!.pdb
+D:\工程\HelloMaYue!\HelloMaYue!\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\工程\HelloMaYue!\HelloMaYue!\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\工程\HelloMaYue!\HelloMaYue!\obj\Debug\HelloMaYue!.csprojResolveAssemblyReference.cache
+D:\工程\HelloMaYue!\HelloMaYue!\obj\Debug\HelloMaYue!.csproj.CoreCompileInputs.cache
+D:\工程\HelloMaYue!\HelloMaYue!\obj\Debug\HelloMaYue!.dll
+D:\工程\HelloMaYue!\HelloMaYue!\obj\Debug\HelloMaYue!.pdb

@@ -1,0 +1,10 @@
+D:\工程\HelloWorldWinform\HelloWorldWinform\bin\Debug\HelloWorldWinform.exe.config
+D:\工程\HelloWorldWinform\HelloWorldWinform\bin\Debug\HelloWorldWinform.exe
+D:\工程\HelloWorldWinform\HelloWorldWinform\bin\Debug\HelloWorldWinform.pdb
+D:\工程\HelloWorldWinform\HelloWorldWinform\obj\Debug\HelloWorldWinform.csprojResolveAssemblyReference.cache
+D:\工程\HelloWorldWinform\HelloWorldWinform\obj\Debug\HelloWorldWinform.Form1.resources
+D:\工程\HelloWorldWinform\HelloWorldWinform\obj\Debug\HelloWorldWinform.Properties.Resources.resources
+D:\工程\HelloWorldWinform\HelloWorldWinform\obj\Debug\HelloWorldWinform.csproj.GenerateResource.Cache
+D:\工程\HelloWorldWinform\HelloWorldWinform\obj\Debug\HelloWorldWinform.csproj.CoreCompileInputs.cache
+D:\工程\HelloWorldWinform\HelloWorldWinform\obj\Debug\HelloWorldWinform.exe
+D:\工程\HelloWorldWinform\HelloWorldWinform\obj\Debug\HelloWorldWinform.pdb

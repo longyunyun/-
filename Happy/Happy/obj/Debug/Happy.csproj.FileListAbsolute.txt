@@ -1,0 +1,4 @@
+D:\工程\Happy\Happy\obj\Debug\JellyCancellation.JellyCancellation.resources
+D:\工程\Happy\Happy\obj\Debug\Happy.Properties.Resources.resources
+D:\工程\Happy\Happy\obj\Debug\Happy.csproj.GenerateResource.Cache
+D:\工程\Happy\Happy\obj\Debug\Happy.csproj.CoreCompileInputs.cache

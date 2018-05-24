@@ -1,0 +1,7 @@
+D:\工程\ReadFile\ReadFile\bin\Debug\ReadFile.exe.config
+D:\工程\ReadFile\ReadFile\bin\Debug\ReadFile.exe
+D:\工程\ReadFile\ReadFile\bin\Debug\ReadFile.pdb
+D:\工程\ReadFile\ReadFile\obj\Debug\ReadFile.csprojResolveAssemblyReference.cache
+D:\工程\ReadFile\ReadFile\obj\Debug\ReadFile.csproj.CoreCompileInputs.cache
+D:\工程\ReadFile\ReadFile\obj\Debug\ReadFile.exe
+D:\工程\ReadFile\ReadFile\obj\Debug\ReadFile.pdb

@@ -1,0 +1,7 @@
+D:\工程\Demo2\Demo2\bin\Debug\Demo2.exe.config
+D:\工程\Demo2\Demo2\bin\Debug\Demo2.exe
+D:\工程\Demo2\Demo2\bin\Debug\Demo2.pdb
+D:\工程\Demo2\Demo2\obj\Debug\Demo2.csprojResolveAssemblyReference.cache
+D:\工程\Demo2\Demo2\obj\Debug\Demo2.csproj.CoreCompileInputs.cache
+D:\工程\Demo2\Demo2\obj\Debug\Demo2.exe
+D:\工程\Demo2\Demo2\obj\Debug\Demo2.pdb

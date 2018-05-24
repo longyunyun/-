@@ -1,0 +1,7 @@
+D:\工程\MyFirstProgram\MyFirstProgram\bin\Debug\MyFirstProgram.exe.config
+D:\工程\MyFirstProgram\MyFirstProgram\bin\Debug\MyFirstProgram.exe
+D:\工程\MyFirstProgram\MyFirstProgram\bin\Debug\MyFirstProgram.pdb
+D:\工程\MyFirstProgram\MyFirstProgram\obj\Debug\MyFirstProgram.csprojResolveAssemblyReference.cache
+D:\工程\MyFirstProgram\MyFirstProgram\obj\Debug\MyFirstProgram.csproj.CoreCompileInputs.cache
+D:\工程\MyFirstProgram\MyFirstProgram\obj\Debug\MyFirstProgram.exe
+D:\工程\MyFirstProgram\MyFirstProgram\obj\Debug\MyFirstProgram.pdb

@@ -1,0 +1,7 @@
+D:\工程\HoneWork7\HoneWork7\bin\Debug\HoneWork7.exe.config
+D:\工程\HoneWork7\HoneWork7\bin\Debug\HoneWork7.exe
+D:\工程\HoneWork7\HoneWork7\bin\Debug\HoneWork7.pdb
+D:\工程\HoneWork7\HoneWork7\obj\Debug\HoneWork7.csprojResolveAssemblyReference.cache
+D:\工程\HoneWork7\HoneWork7\obj\Debug\HoneWork7.csproj.CoreCompileInputs.cache
+D:\工程\HoneWork7\HoneWork7\obj\Debug\HoneWork7.exe
+D:\工程\HoneWork7\HoneWork7\obj\Debug\HoneWork7.pdb

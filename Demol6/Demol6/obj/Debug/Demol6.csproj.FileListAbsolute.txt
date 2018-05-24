@@ -1,0 +1,7 @@
+D:\工程\Demol6\Demol6\bin\Debug\Demol6.exe.config
+D:\工程\Demol6\Demol6\bin\Debug\Demol6.exe
+D:\工程\Demol6\Demol6\bin\Debug\Demol6.pdb
+D:\工程\Demol6\Demol6\obj\Debug\Demol6.csprojResolveAssemblyReference.cache
+D:\工程\Demol6\Demol6\obj\Debug\Demol6.csproj.CoreCompileInputs.cache
+D:\工程\Demol6\Demol6\obj\Debug\Demol6.exe
+D:\工程\Demol6\Demol6\obj\Debug\Demol6.pdb

@@ -1,0 +1,7 @@
+D:\工程\FindFiles\FindFiles\obj\Debug\FindFiles.csprojResolveAssemblyReference.cache
+D:\工程\FindFiles\FindFiles\obj\Debug\FindFiles.csproj.CoreCompileInputs.cache
+D:\工程\FindFiles\FindFiles\bin\Debug\FindFiles.exe.config
+D:\工程\FindFiles\FindFiles\bin\Debug\FindFiles.exe
+D:\工程\FindFiles\FindFiles\bin\Debug\FindFiles.pdb
+D:\工程\FindFiles\FindFiles\obj\Debug\FindFiles.exe
+D:\工程\FindFiles\FindFiles\obj\Debug\FindFiles.pdb

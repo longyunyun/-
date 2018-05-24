@@ -1,0 +1,6 @@
+C:\BegVCSharp\Chapter20\BegVCSharp_20_2_XMLFragments\bin\Debug\BegVCSharp_20_2_XMLFragments.exe.config
+C:\BegVCSharp\Chapter20\BegVCSharp_20_2_XMLFragments\bin\Debug\BegVCSharp_20_2_XMLFragments.exe
+C:\BegVCSharp\Chapter20\BegVCSharp_20_2_XMLFragments\bin\Debug\BegVCSharp_20_2_XMLFragments.pdb
+C:\BegVCSharp\Chapter20\BegVCSharp_20_2_XMLFragments\obj\x86\Debug\BegVCSharp_20_2_XMLFragments.exe
+C:\BegVCSharp\Chapter20\BegVCSharp_20_2_XMLFragments\obj\x86\Debug\BegVCSharp_20_2_XMLFragments.pdb
+C:\BegVCSharp\Chapter20\BegVCSharp_20_2_XMLFragments\obj\x86\Debug\BegVCSharp_20_2_XMLFragments.csprojResolveAssemblyReference.cache

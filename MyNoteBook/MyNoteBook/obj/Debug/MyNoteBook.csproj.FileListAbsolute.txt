@@ -1,0 +1,13 @@
+D:\工程\MyNoteBook\MyNoteBook\bin\Debug\MyNoteBook.exe.config
+D:\工程\MyNoteBook\MyNoteBook\bin\Debug\MyNoteBook.exe
+D:\工程\MyNoteBook\MyNoteBook\bin\Debug\MyNoteBook.pdb
+D:\工程\MyNoteBook\MyNoteBook\obj\Debug\MyNoteBook.csprojResolveAssemblyReference.cache
+D:\工程\MyNoteBook\MyNoteBook\obj\Debug\MyNoteBook.frmMain.resources
+D:\工程\MyNoteBook\MyNoteBook\obj\Debug\MyNoteBook.Properties.Resources.resources
+D:\工程\MyNoteBook\MyNoteBook\obj\Debug\MyNoteBook.csproj.GenerateResource.Cache
+D:\工程\MyNoteBook\MyNoteBook\obj\Debug\MyNoteBook.csproj.CoreCompileInputs.cache
+D:\工程\MyNoteBook\MyNoteBook\obj\Debug\MyNoteBook.exe
+D:\工程\MyNoteBook\MyNoteBook\obj\Debug\MyNoteBook.pdb
+D:\工程\MyNoteBook\MyNoteBook\obj\Debug\MyNoteBook.frmSearch.resources
+D:\工程\MyNoteBook\MyNoteBook\obj\Debug\MyNoteBook.frmGoTo.resources
+D:\工程\MyNoteBook\MyNoteBook\obj\Debug\MyNoteBook.frmAbout.resources

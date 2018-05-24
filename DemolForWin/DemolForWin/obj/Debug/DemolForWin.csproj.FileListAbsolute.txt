@@ -1,0 +1,10 @@
+D:\工程\DemolForWin\DemolForWin\bin\Debug\DemolForWin.exe.config
+D:\工程\DemolForWin\DemolForWin\bin\Debug\DemolForWin.exe
+D:\工程\DemolForWin\DemolForWin\bin\Debug\DemolForWin.pdb
+D:\工程\DemolForWin\DemolForWin\obj\Debug\DemolForWin.csprojResolveAssemblyReference.cache
+D:\工程\DemolForWin\DemolForWin\obj\Debug\DemolForWin.Properties.Resources.resources
+D:\工程\DemolForWin\DemolForWin\obj\Debug\DemolForWin.csproj.GenerateResource.Cache
+D:\工程\DemolForWin\DemolForWin\obj\Debug\DemolForWin.csproj.CoreCompileInputs.cache
+D:\工程\DemolForWin\DemolForWin\obj\Debug\DemolForWin.exe
+D:\工程\DemolForWin\DemolForWin\obj\Debug\DemolForWin.pdb
+D:\工程\DemolForWin\DemolForWin\obj\Debug\DemolForWin.FrmMain.resources

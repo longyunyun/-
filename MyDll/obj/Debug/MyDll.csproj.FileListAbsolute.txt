@@ -1,0 +1,6 @@
+D:\工程\MyDll\bin\Debug\MyDll.dll
+D:\工程\MyDll\bin\Debug\MyDll.pdb
+D:\工程\MyDll\obj\Debug\MyDll.csprojResolveAssemblyReference.cache
+D:\工程\MyDll\obj\Debug\MyDll.csproj.CoreCompileInputs.cache
+D:\工程\MyDll\obj\Debug\MyDll.dll
+D:\工程\MyDll\obj\Debug\MyDll.pdb

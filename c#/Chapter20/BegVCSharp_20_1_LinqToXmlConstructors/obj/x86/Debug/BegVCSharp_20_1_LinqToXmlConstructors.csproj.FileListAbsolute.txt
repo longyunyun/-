@@ -1,0 +1,6 @@
+C:\BegVCSharp\Chapter20\BegVCSharp_20_1_LinqToXmlConstructors\bin\Debug\BegVCSharp_20_1_LinqToXmlConstructors.exe.config
+C:\BegVCSharp\Chapter20\BegVCSharp_20_1_LinqToXmlConstructors\bin\Debug\BegVCSharp_20_1_LinqToXmlConstructors.exe
+C:\BegVCSharp\Chapter20\BegVCSharp_20_1_LinqToXmlConstructors\bin\Debug\BegVCSharp_20_1_LinqToXmlConstructors.pdb
+C:\BegVCSharp\Chapter20\BegVCSharp_20_1_LinqToXmlConstructors\obj\x86\Debug\BegVCSharp_20_1_LinqToXmlConstructors.exe
+C:\BegVCSharp\Chapter20\BegVCSharp_20_1_LinqToXmlConstructors\obj\x86\Debug\BegVCSharp_20_1_LinqToXmlConstructors.pdb
+C:\BegVCSharp\Chapter20\BegVCSharp_20_1_LinqToXmlConstructors\obj\x86\Debug\BegVCSharp_20_1_LinqToXmlConstructors.csprojResolveAssemblyReference.cache

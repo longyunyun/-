@@ -1,0 +1,10 @@
+D:\工程\Clock\Clock\bin\Debug\Clock.exe.config
+D:\工程\Clock\Clock\bin\Debug\Clock.exe
+D:\工程\Clock\Clock\bin\Debug\Clock.pdb
+D:\工程\Clock\Clock\obj\Debug\Clock.csprojResolveAssemblyReference.cache
+D:\工程\Clock\Clock\obj\Debug\Clock.Properties.Resources.resources
+D:\工程\Clock\Clock\obj\Debug\Clock.csproj.GenerateResource.Cache
+D:\工程\Clock\Clock\obj\Debug\Clock.csproj.CoreCompileInputs.cache
+D:\工程\Clock\Clock\obj\Debug\Clock.exe
+D:\工程\Clock\Clock\obj\Debug\Clock.pdb
+D:\工程\Clock\Clock\obj\Debug\Clock.frmMain.resources

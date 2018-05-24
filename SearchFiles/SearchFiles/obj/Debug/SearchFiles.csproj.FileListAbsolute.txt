@@ -1,0 +1,10 @@
+D:\工程\SearchFiles\SearchFiles\bin\Debug\SearchFiles.exe.config
+D:\工程\SearchFiles\SearchFiles\bin\Debug\SearchFiles.exe
+D:\工程\SearchFiles\SearchFiles\bin\Debug\SearchFiles.pdb
+D:\工程\SearchFiles\SearchFiles\obj\Debug\SearchFiles.Properties.Resources.resources
+D:\工程\SearchFiles\SearchFiles\obj\Debug\SearchFiles.csproj.GenerateResource.Cache
+D:\工程\SearchFiles\SearchFiles\obj\Debug\SearchFiles.csproj.CoreCompileInputs.cache
+D:\工程\SearchFiles\SearchFiles\obj\Debug\SearchFiles.exe
+D:\工程\SearchFiles\SearchFiles\obj\Debug\SearchFiles.pdb
+D:\工程\SearchFiles\SearchFiles\obj\Debug\SearchFiles.csprojResolveAssemblyReference.cache
+D:\工程\SearchFiles\SearchFiles\obj\Debug\SearchFiles.FrmMain.resources
