@@ -28,28 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panelgame = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.aim = new System.Windows.Forms.Label();
+            this.labelaim = new System.Windows.Forms.Label();
             this.labelscore = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.NameforGame = new System.Windows.Forms.Label();
             this.panelright = new System.Windows.Forms.Panel();
+            this.labtext = new System.Windows.Forms.Label();
             this.buttonStop = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
+            this.NameforGame = new System.Windows.Forms.Label();
             this.Mypicture = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Bgm = new AxWMPLib.AxWindowsMediaPlayer();
             this.panelgame.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelright.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Mypicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bgm)).BeginInit();
             this.SuspendLayout();
             // 
             // panelgame
             // 
             this.panelgame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panelgame.Controls.Add(this.panel1);
+            this.panelgame.Controls.Add(this.panelTop);
             this.panelgame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelgame.Location = new System.Drawing.Point(0, 0);
             this.panelgame.Name = "panelgame";
@@ -58,17 +62,39 @@
             this.panelgame.Paint += new System.Windows.Forms.PaintEventHandler(this.panelgame_Paint);
             this.panelgame.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelgame_MouseDown);
             // 
-            // panel1
+            // panelTop
             // 
-            this.panel1.BackgroundImage = global::RemoveTheBrickHappily.Properties.Resources.bg;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.labelscore);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 110);
-            this.panel1.TabIndex = 0;
+            this.panelTop.BackgroundImage = global::RemoveTheBrickHappily.Properties.Resources.bg;
+            this.panelTop.Controls.Add(this.aim);
+            this.panelTop.Controls.Add(this.labelaim);
+            this.panelTop.Controls.Add(this.labelscore);
+            this.panelTop.Controls.Add(this.pictureBox1);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(599, 110);
+            this.panelTop.TabIndex = 0;
+            // 
+            // aim
+            // 
+            this.aim.AutoSize = true;
+            this.aim.Font = new System.Drawing.Font("书体坊兰亭体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.aim.Image = global::RemoveTheBrickHappily.Properties.Resources.bg;
+            this.aim.Location = new System.Drawing.Point(493, 60);
+            this.aim.Name = "aim";
+            this.aim.Size = new System.Drawing.Size(63, 33);
+            this.aim.TabIndex = 4;
+            this.aim.Text = "2000";
+            // 
+            // labelaim
+            // 
+            this.labelaim.AutoSize = true;
+            this.labelaim.Image = global::RemoveTheBrickHappily.Properties.Resources.bg;
+            this.labelaim.Location = new System.Drawing.Point(422, 20);
+            this.labelaim.Name = "labelaim";
+            this.labelaim.Size = new System.Drawing.Size(134, 18);
+            this.labelaim.TabIndex = 3;
+            this.labelaim.Text = "目标：得分大于";
             // 
             // labelscore
             // 
@@ -92,23 +118,12 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // NameforGame
-            // 
-            this.NameforGame.AutoSize = true;
-            this.NameforGame.Font = new System.Drawing.Font("书体坊兰亭体", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.NameforGame.Image = global::RemoveTheBrickHappily.Properties.Resources.bg;
-            this.NameforGame.Location = new System.Drawing.Point(72, 60);
-            this.NameforGame.Name = "NameforGame";
-            this.NameforGame.Size = new System.Drawing.Size(78, 64);
-            this.NameforGame.TabIndex = 0;
-            this.NameforGame.Text = "18";
-            this.NameforGame.Click += new System.EventHandler(this.NameforGame_Click);
-            // 
             // panelright
             // 
             this.panelright.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panelright.BackgroundImage = global::RemoveTheBrickHappily.Properties.Resources.bg;
-            this.panelright.Controls.Add(this.label2);
+            this.panelright.Controls.Add(this.Bgm);
+            this.panelright.Controls.Add(this.labtext);
             this.panelright.Controls.Add(this.buttonStop);
             this.panelright.Controls.Add(this.btnStart);
             this.panelright.Controls.Add(this.NameforGame);
@@ -117,6 +132,16 @@
             this.panelright.Name = "panelright";
             this.panelright.Size = new System.Drawing.Size(215, 666);
             this.panelright.TabIndex = 2;
+            // 
+            // labtext
+            // 
+            this.labtext.AutoSize = true;
+            this.labtext.Image = global::RemoveTheBrickHappily.Properties.Resources.bg;
+            this.labtext.Location = new System.Drawing.Point(58, 20);
+            this.labtext.Name = "labtext";
+            this.labtext.Size = new System.Drawing.Size(116, 18);
+            this.labtext.TabIndex = 3;
+            this.labtext.Text = "剩余移动次数";
             // 
             // buttonStop
             // 
@@ -141,6 +166,18 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
+            // NameforGame
+            // 
+            this.NameforGame.AutoSize = true;
+            this.NameforGame.Font = new System.Drawing.Font("书体坊兰亭体", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.NameforGame.Image = global::RemoveTheBrickHappily.Properties.Resources.bg;
+            this.NameforGame.Location = new System.Drawing.Point(72, 60);
+            this.NameforGame.Name = "NameforGame";
+            this.NameforGame.Size = new System.Drawing.Size(78, 64);
+            this.NameforGame.TabIndex = 0;
+            this.NameforGame.Text = "18";
+            this.NameforGame.Click += new System.EventHandler(this.NameforGame_Click);
+            // 
             // Mypicture
             // 
             this.Mypicture.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -150,25 +187,15 @@
             this.Mypicture.TabIndex = 0;
             this.Mypicture.TabStop = false;
             // 
-            // label1
+            // Bgm
             // 
-            this.label1.AutoSize = true;
-            this.label1.Image = global::RemoveTheBrickHappily.Properties.Resources.bg;
-            this.label1.Location = new System.Drawing.Point(412, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 18);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "目标：得分大于2000";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Image = global::RemoveTheBrickHappily.Properties.Resources.bg;
-            this.label2.Location = new System.Drawing.Point(58, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "剩余移动次数";
+            this.Bgm.Enabled = true;
+            this.Bgm.Location = new System.Drawing.Point(176, 0);
+            this.Bgm.Name = "Bgm";
+            this.Bgm.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Bgm.OcxState")));
+            this.Bgm.Size = new System.Drawing.Size(39, 36);
+            this.Bgm.TabIndex = 4;
+            this.Bgm.Visible = false;
             // 
             // frmMain
             // 
@@ -183,12 +210,13 @@
             this.Text = "消消乐";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelgame.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelright.ResumeLayout(false);
             this.panelright.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Mypicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bgm)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,11 +229,13 @@
         private System.Windows.Forms.Panel panelgame;
         private System.Windows.Forms.Label NameforGame;
         private System.Windows.Forms.Label labelscore;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonStop;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelaim;
+        private System.Windows.Forms.Label labtext;
+        private System.Windows.Forms.Label aim;
+        private AxWMPLib.AxWindowsMediaPlayer Bgm;
     }
 }
 

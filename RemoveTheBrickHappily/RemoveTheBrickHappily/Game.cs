@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,7 +16,6 @@ namespace RemoveTheBrickHappily
     /// </summary>
     class Game
     {
-
         const int X = 8;
         const int Y = 8;
         public int Width { get; set; }//宽
@@ -26,8 +26,7 @@ namespace RemoveTheBrickHappily
         private  int start = 0;//记录是否开始
         public Map map = new Map(X, Y);
         public int step = 18;//步数
-        public int score = 0;//分数
-        private int swaping ;
+        public int score { get; set; }//分数
      
     
 
@@ -124,7 +123,7 @@ namespace RemoveTheBrickHappily
                 for (int j = 1; j <= Y; j++)
                 {
                     if (map.brick[i, j]._Willclean == 1)
-                        map.brick[i, j].BrickColor = BrickColor.无;
+                        map.brick[i, j].BrickColor = BrickColor.特效;
                     map.brick[i, j].Draw(g);
                 }
             score += (tot * 10);
@@ -143,7 +142,7 @@ namespace RemoveTheBrickHappily
                 {
                     for (int i = X; i >= 2; i--)
                     {
-                        if (map.brick[i, j].BrickColor == BrickColor.无)
+                        if (map.brick[i, j].BrickColor == BrickColor.特效)
                         {
                             for (int k = i; k >= 2; k--)
                             {
@@ -163,7 +162,7 @@ namespace RemoveTheBrickHappily
                 Random myRand = new Random();
                     for (int j = 1; j <= Y; j++)
                     {
-                        if (map.brick[1, j].BrickColor == BrickColor.无)
+                        if (map.brick[1, j].BrickColor == BrickColor.特效)
                         { map.brick[1, j].BrickColor = (BrickColor)myRand.Next(1, 5);
                             map.brick[1, j].Draw(g);
 
@@ -175,7 +174,7 @@ namespace RemoveTheBrickHappily
                 {
                     for (int j = 1; j <= X; j++)
                     {
-                        if (map.brick[i, j].BrickColor == BrickColor.无)
+                        if (map.brick[i, j].BrickColor == BrickColor.特效)
                         {
                             flag = true;
                             break;
@@ -251,17 +250,12 @@ namespace RemoveTheBrickHappily
                                 map.MapDraw(g);
 
 
-                        
-
-                                swaping = 1;
-                              
 
                                 if (!isclean(g))//如果不能消除那么换回来,重新标记
                                 {
                               
                                     swap(_dropRow, _dropCol, _pickRow, _pickCol);
                               
-                                    swaping = 1;
                                     map.brick[_pickRow, _pickCol]._Flag = 0;
                                     _ispic = 0;
                                 }
@@ -272,6 +266,9 @@ namespace RemoveTheBrickHappily
                                     _pickCol = 0;
                                     _ispic = 0;
                                     step -= 1;
+                                    SoundPlayer music = new SoundPlayer(Properties.Resources.音效7);
+
+                                   music.Play();
 
                                 }
 

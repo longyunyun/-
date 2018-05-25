@@ -131,6 +131,15 @@ namespace RemoveTheBrickHappily.Properties {
         }
         
         /// <summary>
+        ///   查找类似于 System.IO.MemoryStream 的 System.IO.UnmanagedMemoryStream 类型的本地化资源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream GameSceneBGM_01 {
+            get {
+                return ResourceManager.GetStream("GameSceneBGM_01", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap greenbtn {
@@ -146,6 +155,16 @@ namespace RemoveTheBrickHappily.Properties {
         internal static System.Drawing.Bitmap greenbtn1 {
             get {
                 object obj = ResourceManager.GetObject("greenbtn1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap PlayBtn {
+            get {
+                object obj = ResourceManager.GetObject("PlayBtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -177,6 +196,25 @@ namespace RemoveTheBrickHappily.Properties {
             get {
                 object obj = ResourceManager.GetObject("ScorePanel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 边框特效004_7 {
+            get {
+                object obj = ResourceManager.GetObject("边框特效004_7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 System.IO.MemoryStream 的 System.IO.UnmanagedMemoryStream 类型的本地化资源。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream 音效7 {
+            get {
+                return ResourceManager.GetStream("音效7", resourceCulture);
             }
         }
     }

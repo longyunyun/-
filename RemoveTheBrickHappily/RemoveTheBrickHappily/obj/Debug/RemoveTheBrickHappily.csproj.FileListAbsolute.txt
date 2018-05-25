@@ -8,3 +8,8 @@ D:\工程\RemoveTheBrickHappily\RemoveTheBrickHappily\obj\Debug\RemoveTheBrickHa
 D:\工程\RemoveTheBrickHappily\RemoveTheBrickHappily\obj\Debug\RemoveTheBrickHappily.csproj.CoreCompileInputs.cache
 D:\工程\RemoveTheBrickHappily\RemoveTheBrickHappily\obj\Debug\RemoveTheBrickHappily.exe
 D:\工程\RemoveTheBrickHappily\RemoveTheBrickHappily\obj\Debug\RemoveTheBrickHappily.pdb
+D:\工程\RemoveTheBrickHappily\RemoveTheBrickHappily\bin\Debug\Interop.WMPLib.dll
+D:\工程\RemoveTheBrickHappily\RemoveTheBrickHappily\bin\Debug\AxInterop.WMPLib.dll
+D:\工程\RemoveTheBrickHappily\RemoveTheBrickHappily\obj\Debug\Interop.WMPLib.dll
+D:\工程\RemoveTheBrickHappily\RemoveTheBrickHappily\obj\Debug\AxInterop.WMPLib.dll
+D:\工程\RemoveTheBrickHappily\RemoveTheBrickHappily\obj\Debug\RemoveTheBrickHappily.csproj.ResolveComReference.cache

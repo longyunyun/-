@@ -9,7 +9,7 @@ namespace RemoveTheBrickHappily
 {
     public enum BrickColor
     {
-        无 = 0, 白 = 1, 蓝 = 2, 粉 = 3,紫=4
+        无 = 0, 白 = 1, 蓝 = 2, 粉 = 3,紫=4,特效=5
     }
     class Brick
     {     /// <summary>
@@ -63,6 +63,8 @@ namespace RemoveTheBrickHappily
             picture[3] = new Bitmap(Properties.Resources._3);
             picture[4] = new Bitmap(Properties.Resources._4);
             picture[0] = new Bitmap(Properties.Resources._0);
+            picture[5] = new Bitmap(Properties.Resources.边框特效004_7);
+
             nowpic = picture[(int)color];//当前图片颜色
         }
         public void Draw(Graphics g)
@@ -91,6 +93,11 @@ namespace RemoveTheBrickHappily
             if (BrickColor == BrickColor.蓝)
             {
                 g.DrawImage(Properties.Resources._2, _top.X, _top.Y, _size, _size);
+
+            }
+            if (BrickColor == BrickColor.特效)
+            {
+                g.DrawImage(Properties.Resources.边框特效004_7, _top.X, _top.Y, _size, _size);
 
             }
 
