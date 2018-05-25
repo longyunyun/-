@@ -23,13 +23,12 @@ namespace RemoveTheBrickHappily
 
         private Map Map { get { return map; } set { map = value; } }
      
-        private  int swaping = 0;//记录是否在交换
         private  int start = 0;//记录是否开始
         public Map map = new Map(X, Y);
-
-
-        private Brick j1 = new Brick(BrickColor.无, new Point(0, 0), 40, 0);//临时交换用
-        private Brick j2 = new Brick(BrickColor.无, new Point(0, 0), 40, 0);
+        public int step = 18;//步数
+        public int score = 0;//分数
+        private int swaping ;
+     
     
 
         private int _ispic;//记录是否选中方块
@@ -55,11 +54,7 @@ namespace RemoveTheBrickHappily
             if (start == 1)//如果已经开始，画出图
                 map.MapDraw(g);
 
-            if (swaping == 1) //如果正在交换 画出临时变量
-            {
-                j1.Draw(g);
-                j2.Draw(g);
-            }
+       
         }
         /// <summary>
         /// 判断是否能消除
@@ -132,7 +127,7 @@ namespace RemoveTheBrickHappily
                         map.brick[i, j].BrickColor = BrickColor.无;
                     map.brick[i, j].Draw(g);
                 }
-
+            score += (tot * 10);
             return isclean;//返回是否可消
         }
    
@@ -222,6 +217,7 @@ namespace RemoveTheBrickHappily
 
                 if (_ispic == 0)//如果没有点击过，标记点击位置
                 {
+
                     int row, col;
                     bool value = map.ConvertPointToRowCol(new Point(X, Y), out row, out col); //捕捉行列
                     if (value == true)
@@ -275,6 +271,7 @@ namespace RemoveTheBrickHappily
                                     _pickRow = 0;
                                     _pickCol = 0;
                                     _ispic = 0;
+                                    step -= 1;
 
                                 }
 

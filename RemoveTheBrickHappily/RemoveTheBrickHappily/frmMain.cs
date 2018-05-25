@@ -22,7 +22,6 @@ namespace RemoveTheBrickHappily
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            game = new Game(this.panelgame.Width, this.panelgame.Height);
 
         }
         /// <summary>
@@ -36,8 +35,14 @@ namespace RemoveTheBrickHappily
 
             Graphics g = this.panelgame.CreateGraphics();
             game.Draw(g);
+
             game.isclean(g);
            game.Down(this.panelgame.CreateGraphics());
+
+            game.score = 0;
+            this.btnStart.Text = "重新开始";
+            this.buttonStop.Text = "暂停游戏";
+            this.buttonStop.Image = Properties.Resources.redbtn;
 
         }
 
@@ -50,11 +55,46 @@ namespace RemoveTheBrickHappily
 
         private void panelgame_MouseDown(object sender, MouseEventArgs e)
         {
-
-            game.Mouse(e.X, e.Y, this.panelgame.CreateGraphics());
+            if (this.buttonStop.Text == "暂停游戏")
+            {
+                game.Mouse(e.X, e.Y, this.panelgame.CreateGraphics());
+                this.NameforGame.Text = game.step.ToString();
+                this.labelscore.Text = game.score.ToString();
+                if (this.NameforGame.Text == "0")
+                {
+                    MessageBox.Show("Game over!");
+                }
+                if (Convert.ToInt32(this.labelscore.Text )>= 2000)
+                {
+                    MessageBox.Show("闯关成功");
+                }
+            }
+          
         }
 
         private void NameforGame_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            if (this.buttonStop.Text == "继续游戏")
+            {
+                this.buttonStop.Text = "暂停游戏";
+                this.buttonStop.Image = Properties.Resources.redbtn;
+
+            }
+           else
+            {
+                this.buttonStop.Text = "继续游戏";
+                this.buttonStop.Image = Properties.Resources.greenbtn1;
+            }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

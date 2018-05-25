@@ -123,9 +123,59 @@ namespace RemoveTheBrickHappily.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap GameBG {
+            get {
+                object obj = ResourceManager.GetObject("GameBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap greenbtn {
             get {
                 object obj = ResourceManager.GetObject("greenbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap greenbtn1 {
+            get {
+                object obj = ResourceManager.GetObject("greenbtn1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap redbtn {
+            get {
+                object obj = ResourceManager.GetObject("redbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ScoreNumberActive {
+            get {
+                object obj = ResourceManager.GetObject("ScoreNumberActive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ScorePanel {
+            get {
+                object obj = ResourceManager.GetObject("ScorePanel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
