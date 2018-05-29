@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "RemoveBrick", "RemoveBrick\RemoveBrick.vdproj", "{0FC6D8F6-4C43-4D9A-B0AF-63B132E98833}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FC6D8F6-4C43-4D9A-B0AF-63B132E98833}.Debug|Default.ActiveCfg = Debug
+		{0FC6D8F6-4C43-4D9A-B0AF-63B132E98833}.Debug|Default.Build.0 = Debug
+		{0FC6D8F6-4C43-4D9A-B0AF-63B132E98833}.Release|Default.ActiveCfg = Release
+		{0FC6D8F6-4C43-4D9A-B0AF-63B132E98833}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D887BB48-891A-43AB-BD12-860147D029A0}
+	EndGlobalSection
+EndGlobal

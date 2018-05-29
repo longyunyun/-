@@ -76,5 +76,13 @@ namespace MyBricks
                 this.Left = GameWidth - MyWidth;
             }
         }
+        /// <summary>
+        /// 小球反弹
+        /// </summary>
+        public  void Recflect()
+        {
+            this.SpeedX *= 1;
+            this.SpeedY *= -1;
+        }
     }
 }

@@ -16,8 +16,14 @@ namespace MyBricks
         private Ball ball { get; set; }
        private  Bar bar { get; set; }
         private List<Brick> bricks { get; set; }
-
-
+        /// <summary>
+        /// 定义委托类型
+        /// </summary>
+        public delegate void GameOver();
+        /// <summary>
+        /// 定义事件
+        /// </summary>
+        public event GameOver gameover;
         public Game (int width,int height)
         {
             Width = width;
@@ -43,7 +49,11 @@ namespace MyBricks
 
             ball.Draw(g);
             bar.Draw(g);
-            List<brick.Draw(g);
+            foreach (var brick in bricks)
+            {
+                brick.Draw(g);
+
+            }
         }
         /// <summary>
         /// 时针走一步
@@ -53,7 +63,25 @@ namespace MyBricks
             //小球走一步
             ball.Step();
             //判断碰撞
-
+            if (ball.rectangle.IntersectsWith(bar.rectangle))
+            {
+                ball.Recflect();
+            }
+            foreach (var brick in bricks)
+            {
+                if (ball.rectangle.IntersectsWith(brick.rectangle))
+                {
+                    ball.Recflect();
+                    this.bricks.Remove(brick);
+                    break;
+                }
+            }
+            if (bricks.Count==0)
+            {//游戏结束
+                
+                gameover();
+            }
+           
         }
         public void move(string key)
         {

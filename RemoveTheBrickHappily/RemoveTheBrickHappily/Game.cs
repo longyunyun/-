@@ -27,14 +27,23 @@ namespace RemoveTheBrickHappily
         public Map map = new Map(X, Y);
         public int step = 18;//步数
         public int score { get; set; }//分数
-     
-    
+        public int aimscore = 2000;//目标分数
+        public int Number=1;//关数
+        /// <summary>
+        /// 定义委托类型
+        /// </summary>
+        public delegate void GameOver();
+        //定义事件 游戏结束
+        public event GameOver gameover;
+        
+        public delegate void Win();//闯关成功
+        public event Win win;//闯关成功
 
         private int _ispic;//记录是否选中方块
         private int _pickRow = 0;//记录选中的行
         private int _pickCol = 0;//记录选中的列
-        private int _dropRow = 0;
-        private int _dropCol = 0;
+        private int _dropRow = 0;//另一个选中的行
+        private int _dropCol = 0;//另一个选中的列
    
         public Game(int width, int height)
         {
@@ -53,7 +62,7 @@ namespace RemoveTheBrickHappily
             if (start == 1)//如果已经开始，画出图
                 map.MapDraw(g);
 
-       
+           
         }
         /// <summary>
         /// 判断是否能消除
@@ -131,10 +140,12 @@ namespace RemoveTheBrickHappily
         }
    
         private bool flag = true ;
+        /// <summary>
+        /// 下落
+        /// </summary>
+        /// <param name="g"></param>
        public void Down(Graphics g)
         {
-            
-          
             //搜索每一列，把最下面的空白慢慢换上来，类似冒泡排序
             do
             {
@@ -185,10 +196,7 @@ namespace RemoveTheBrickHappily
                 }
             } while (flag || isclean(g));
 
-           
-              
-           
-
+   
         }   
         /// <summary>
         /// 交换方块颜色
@@ -206,13 +214,17 @@ namespace RemoveTheBrickHappily
 
 
         }
-
+        /// <summary>
+        /// 鼠标点击
+        /// </summary>
+        /// <param name="X"></param>
+        /// <param name="Y"></param>
+        /// <param name="g"></param>
         public void Mouse(int X, int Y, Graphics g)
         {
 
             if (start == 1)
             {
-
 
                 if (_ispic == 0)//如果没有点击过，标记点击位置
                 {
@@ -248,8 +260,6 @@ namespace RemoveTheBrickHappily
                                 swap(row, col, _pickRow, _pickCol);
                       
                                 map.MapDraw(g);
-
-
 
                                 if (!isclean(g))//如果不能消除那么换回来,重新标记
                                 {
@@ -287,8 +297,60 @@ namespace RemoveTheBrickHappily
 
                 }
             }
+            if (score >= aimscore)
+            {
+                win();
+            }
+            if (step== 0)
+            {
+                gameover();
+            }
         }
-     
+        /// <summary>
+        /// 下一关
+        /// </summary>
+        /// <param name="g"></param>
+        public void Next(Graphics g)
+        {
+            Number += 1;
+
+            aimscore+= 2000;//目标分数变化
+            map = new Map(8, 8);
+
+
+            if (step > 10)
+            {
+                step = 18 - Number;
+
+            }
+            else step = 10;
+            Draw(g);
+            isclean(g);
+            Down(g);
+            score = 0;
+
+        }
+        /// <summary>
+        /// 重新开始
+        /// </summary>
+        /// <param name="g"></param>
+        public void RePlay(Graphics g)
+        {
+            Number = 1;
+            step = 18;
+            aimscore = 2000;
+            map = new Map(8, 8);
+            Draw(g);
+            isclean(g);
+            Down(g);
+            score = 0;
+
+        }
+        public void skill()
+        {
+            step += 5;
+        }
+
     }
 }
 

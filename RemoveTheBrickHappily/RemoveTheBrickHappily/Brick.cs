@@ -43,13 +43,7 @@ namespace RemoveTheBrickHappily
             set { _top = value; }
         }
 
-      /*  public Rectangle rectangle
-        {
-            get
-            {
-                return new Rectangle(Left, Top, 20, 20);
-            }
-        }*/
+ 
         public Brick(BrickColor color, Point top, int width, int height)
         {
             GameWidth = width;

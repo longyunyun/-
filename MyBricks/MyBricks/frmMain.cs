@@ -35,6 +35,14 @@ namespace MyBricks
         private void frmMain_Load(object sender, EventArgs e)
         {
             game = new Game(this.panelgame.Width,this.panelgame.Height);
+            game.gameover += Game_gameover;
+        }
+
+        private void Game_gameover()
+        {//真正的响应程序
+         //  throw new NotImplementedException();
+            this.timerGame.Enabled = false;
+            MessageBox.Show("Game Over");
         }
 
         private void timerGame_Tick(object sender, EventArgs e)

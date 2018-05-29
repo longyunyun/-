@@ -28,33 +28,65 @@ namespace RemoveTheBrickHappily
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           // sp.PlayLooping();
+            game = new Game(this.panelgame.Width, this.panelgame.Height);
+            game.gameover += Game_gameover;
+            game.win += Game_win;
+            //背景音乐
             Bgm.URL = Application.StartupPath +@"\GameSceneBGM.mp3";
             Bgm.Ctlcontrols.play();
+         
 
         }
         /// <summary>
-        /// 游戏开始
+        /// 闯关成功
+        /// </summary>
+        private void Game_win()
+        {
+            this.labelscore.Text = game.score.ToString();
+            this.stepNumber.Text = game.step.ToString();
+            if (MessageBox.Show("恭喜闯关成功，还想继续挑战自己吗?再来一关？", "闯关成功", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+
+             
+                this.labelscore.Text = game.score.ToString();
+                this.stepNumber.Text = game.step.ToString();
+                this.btnStart.Text = "重新开始";
+                this.buttonStop.Text = "暂停游戏";
+                this.buttonStop.Image = Properties.Resources.redbtn;
+                Graphics g = this.panelgame.CreateGraphics();
+
+                game.Next(g);
+                this.Text = "消消乐——第" + game.Number + "关";
+
+                this.aim.Text = game.aimscore.ToString();
+
+            }
+        }
+        /// <summary>
+        /// 游戏结束
+        /// </summary>
+        private void Game_gameover()
+        {
+            this.labelscore.Text = game.score.ToString();
+            this.stepNumber.Text = game.step.ToString();
+            MessageBox.Show("Game over!");
+        }
+
+        /// <summary>
+        /// 游戏开始 重新开始
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnStart_Click(object sender, EventArgs e)
         {
-             n = 1;
-            this.Text = "消消乐——第"+n+"关";
-            this.labelscore.Text = "0";
 
-            game = new Game(this.panelgame.Width, this.panelgame.Height);
        
             Graphics g = this.panelgame.CreateGraphics();
-
-           
-            this.aim.Text = "2000";//目标最小
-            this.NameforGame.Text = game.step.ToString();
-            game.Draw(g);
-            game.isclean(g);
-            game.Down(g);
-            game.score = 0;//分数清零
+            game.RePlay(g);
+            this.labelscore.Text = game.score.ToString();
+            this.stepNumber.Text = game.step.ToString();
+            this.aim.Text = game.aimscore.ToString();
+            this.Text = "消消乐——第" + game.Number + "关";
 
             this.btnStart.Text = "重新开始";
             this.buttonStop.Text = "暂停游戏";
@@ -69,7 +101,7 @@ namespace RemoveTheBrickHappily
         }
       
         /// <summary>
-        /// 点击鼠标刷新分数 步数 判断是否游戏继续
+        /// 点击鼠标刷新分数 步数 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -78,47 +110,17 @@ namespace RemoveTheBrickHappily
             if (this.buttonStop.Text == "暂停游戏")
             {
                 game.Mouse(e.X, e.Y, this.panelgame.CreateGraphics());
-                this.NameforGame.Text = game.step.ToString();
+                this.stepNumber.Text = game.step.ToString();
                 this.labelscore.Text = game.score.ToString();
-                if (Convert.ToInt32(this.labelscore.Text )>=Convert.ToInt32( this.aim.Text))
-                {
-                    if (MessageBox.Show("恭喜闯关成功，还想继续挑战自己吗?再来一关？", "闯关成功", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)== DialogResult.OK)
-                    {
-                       
-                        n +=1;
-                        this.Text = "消消乐——第"+n+"关";
-                      
-                        this.aim.Text = Convert.ToString(Convert.ToInt32(this.aim.Text) + 2000);//目标分数变化
-                        this.labelscore.Text = "0";
-
-                        this.btnStart.Text = "重新开始";
-                        this.buttonStop.Text = "暂停游戏";
-                        this.buttonStop.Image = Properties.Resources.redbtn;
-                        game = new Game(this.panelgame.Width, this.panelgame.Height);
-                        game.step = game.step -= 2;
-                        this.NameforGame.Text = game.step.ToString();
-                        Graphics g = this.panelgame.CreateGraphics();
-                        game.Draw(g);
-                        game.isclean(g);
-                        game.Down(g);
-                        game.score = 0;
-
-                    }
-                }
-                if (this.NameforGame.Text == "0")
-                {
-                    MessageBox.Show("Game over!");
-
-                }
+              
             }
           
         }
-
-        private void NameforGame_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// 暂停 继续
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -141,6 +143,9 @@ namespace RemoveTheBrickHappily
 
         }
 
-      
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            game.skill();
+        }
     }
 }

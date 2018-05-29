@@ -113,6 +113,16 @@ namespace RemoveTheBrickHappily.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap b919dc9e67ca752cf45bb8d917a32b54 {
+            get {
+                object obj = ResourceManager.GetObject("b919dc9e67ca752cf45bb8d917a32b54", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap bg {
             get {
                 object obj = ResourceManager.GetObject("bg", resourceCulture);
@@ -195,6 +205,16 @@ namespace RemoveTheBrickHappily.Properties {
         internal static System.Drawing.Bitmap ScorePanel {
             get {
                 object obj = ResourceManager.GetObject("ScorePanel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap yellowbtn {
+            get {
+                object obj = ResourceManager.GetObject("yellowbtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

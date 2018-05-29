@@ -36,18 +36,19 @@
             this.labelscore = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelright = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Bgm = new AxWMPLib.AxWindowsMediaPlayer();
             this.labtext = new System.Windows.Forms.Label();
             this.buttonStop = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
-            this.NameforGame = new System.Windows.Forms.Label();
+            this.stepNumber = new System.Windows.Forms.Label();
             this.Mypicture = new System.Windows.Forms.PictureBox();
-            this.Bgm = new AxWMPLib.AxWindowsMediaPlayer();
             this.panelgame.SuspendLayout();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelright.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Mypicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bgm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mypicture)).BeginInit();
             this.SuspendLayout();
             // 
             // panelgame
@@ -122,16 +123,39 @@
             // 
             this.panelright.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panelright.BackgroundImage = global::RemoveTheBrickHappily.Properties.Resources.bg;
+            this.panelright.Controls.Add(this.button1);
             this.panelright.Controls.Add(this.Bgm);
             this.panelright.Controls.Add(this.labtext);
             this.panelright.Controls.Add(this.buttonStop);
             this.panelright.Controls.Add(this.btnStart);
-            this.panelright.Controls.Add(this.NameforGame);
+            this.panelright.Controls.Add(this.stepNumber);
             this.panelright.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelright.Location = new System.Drawing.Point(599, 0);
             this.panelright.Name = "panelright";
             this.panelright.Size = new System.Drawing.Size(215, 666);
             this.panelright.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::RemoveTheBrickHappily.Properties.Resources.yellowbtn;
+            this.button1.Image = global::RemoveTheBrickHappily.Properties.Resources.yellowbtn;
+            this.button1.Location = new System.Drawing.Point(51, 338);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 51);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "步数增加5";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // Bgm
+            // 
+            this.Bgm.Enabled = true;
+            this.Bgm.Location = new System.Drawing.Point(176, 0);
+            this.Bgm.Name = "Bgm";
+            this.Bgm.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Bgm.OcxState")));
+            this.Bgm.Size = new System.Drawing.Size(39, 36);
+            this.Bgm.TabIndex = 4;
+            this.Bgm.Visible = false;
             // 
             // labtext
             // 
@@ -166,17 +190,16 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // NameforGame
+            // stepNumber
             // 
-            this.NameforGame.AutoSize = true;
-            this.NameforGame.Font = new System.Drawing.Font("书体坊兰亭体", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.NameforGame.Image = global::RemoveTheBrickHappily.Properties.Resources.bg;
-            this.NameforGame.Location = new System.Drawing.Point(72, 60);
-            this.NameforGame.Name = "NameforGame";
-            this.NameforGame.Size = new System.Drawing.Size(78, 64);
-            this.NameforGame.TabIndex = 0;
-            this.NameforGame.Text = "18";
-            this.NameforGame.Click += new System.EventHandler(this.NameforGame_Click);
+            this.stepNumber.AutoSize = true;
+            this.stepNumber.Font = new System.Drawing.Font("书体坊兰亭体", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.stepNumber.Image = global::RemoveTheBrickHappily.Properties.Resources.bg;
+            this.stepNumber.Location = new System.Drawing.Point(72, 60);
+            this.stepNumber.Name = "stepNumber";
+            this.stepNumber.Size = new System.Drawing.Size(78, 64);
+            this.stepNumber.TabIndex = 0;
+            this.stepNumber.Text = "18";
             // 
             // Mypicture
             // 
@@ -186,16 +209,6 @@
             this.Mypicture.Size = new System.Drawing.Size(814, 666);
             this.Mypicture.TabIndex = 0;
             this.Mypicture.TabStop = false;
-            // 
-            // Bgm
-            // 
-            this.Bgm.Enabled = true;
-            this.Bgm.Location = new System.Drawing.Point(176, 0);
-            this.Bgm.Name = "Bgm";
-            this.Bgm.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Bgm.OcxState")));
-            this.Bgm.Size = new System.Drawing.Size(39, 36);
-            this.Bgm.TabIndex = 4;
-            this.Bgm.Visible = false;
             // 
             // frmMain
             // 
@@ -215,8 +228,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelright.ResumeLayout(false);
             this.panelright.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Mypicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bgm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mypicture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,7 +240,7 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Panel panelright;
         private System.Windows.Forms.Panel panelgame;
-        private System.Windows.Forms.Label NameforGame;
+        private System.Windows.Forms.Label stepNumber;
         private System.Windows.Forms.Label labelscore;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -236,6 +249,7 @@
         private System.Windows.Forms.Label labtext;
         private System.Windows.Forms.Label aim;
         private AxWMPLib.AxWindowsMediaPlayer Bgm;
+        private System.Windows.Forms.Button button1;
     }
 }
 
